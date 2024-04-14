@@ -1,0 +1,634 @@
+/*------------RESET------------------*/
+*{
+    margin:0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+}
+body{background-color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+}
+ul{list-style: none;}
+img{max-width:100%;}
+/*------------CABEÇALHO/HEADER------------------*/
+header{
+    width: 100%;
+    float: left;
+    padding:3% 4%;
+    background:#f5f5f5;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 56px;
+    height: 56px;
+    float: left;
+    background:url(../images/logo-mobile.png) center center/56px no-repeat;
+    font-size:0;
+}
+.btn-menu{
+    width: 56px;
+    height: 56px;
+    float: right;
+    text-align: center;
+    border-radius: 56px;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(to top,#02a2f8,#28f09e );
+}
+/*------------MENU------------------*/
+.menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+}
+.btn-close{
+    font-size: 1.5em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+.btn-close:hover{
+    color: #009ee3;
+}
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.menu li{
+    padding: 1.5%;
+}
+
+.menu li a{
+    font-size: 2em;
+    color: #fff;
+    padding: 1.5% 3%;
+}
+.menu li i{
+    align-items: center;
+}
+
+.menu li a:hover {
+border:1px solid #28f09e;
+color: #009ee3;
+}
+/*------------BANNER------------------*/
+.banner{
+width: 100%;
+height: 450px;
+float: left;
+text-align: center;
+padding: 10% 10% ;
+background: url(../images/bg11.jpg) no-repeat fixed;
+}
+.title{width:100%;
+    text-align: center;
+justify-content: center;
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+.title h1{font-size: 5em;     color: #fff;
+    font-weight: bold}
+
+.title h2{
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 700;}
+
+.title h2 strong{
+        font-size: 1.5em;
+        color:#fff;
+        font-weight: 700;}
+/*28f09e*/
+.title h3{
+    font-size: 1.5em;
+    color: #fff;
+}
+/*------------ MÉTODOS ------------------*/
+.container-method{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    float: left;
+    padding:100px 0 0 50px;
+    
+}
+.card-method{
+    width: 310px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0 0px;
+}
+.background-method{ 
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-method:nth-child(4),
+.card-method:nth-child(5),
+.card-method:nth-child(6){
+    padding: 50px 0 50px;
+    margin: 0px 0px 0px;
+}
+.title-method{
+    align-items: center;
+    justify-content: center center;
+    width: 100%;
+    font-size: 1.2em;
+    color: rgb(27, 27, 27);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 50px 0 50px;
+    text-align: center;
+}
+.container-method .card-method{
+ position: relative;
+ box-shadow: black;
+ border-radius: 15px;
+ margin: 12px;  
+}
+.icon-method{
+    min-width: 8rem;
+    max-width: 8rem;
+    height: 8rem;
+    transform: translateX(5.5em) translateY(1rem);
+    position: relative;
+    box-shadow: black;
+    padding-bottom: 0;
+}
+.icon-method img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+    
+}
+.box-method{
+    background-color: rgba(255, 255, 255, 0.829);   
+    border-radius: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5em;
+    box-shadow: 15px black;
+    min-height: 145px;
+}
+.box-method h2{
+    font-size: 2.2rem;
+        margin:0rem 0 2rem;
+        text-transform: uppercase;
+        color: #4facfe;
+        align-items: center top;
+        justify-self: center;
+        text-align: center;
+
+}
+.box-method p{
+    color: #000000c0;
+    font-size: 1.0em;
+    justify-content: center;
+    margin-bottom: 8px;
+    }
+
+.drop{
+position: absolute;
+bottom: 1px;
+width: 50%;
+display: flex;
+justify-content: flex-end;
+}
+.drop i{
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: rgba(31, 31, 31, 0.753);
+    transition: all 0.6s ease;
+}
+.drop i:hover{
+    color: rgb(24, 21, 21)
+}
+.drop-active{
+    height: fit-content!important;
+}
+.drop-rotate{
+    transform: rotate(180deg);
+}
+.card-descripcion{
+    height: 0px;
+    transition: all 0.6s ease;
+}
+
+
+/*------------SERVIÇOS------------------*/
+.services{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+}
+.servicos{
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    float: left;
+    border-radius: 7px;
+    margin-bottom: 3%;
+    padding: 3% 4%;
+}
+.servicos img{
+    border-radius: 7px 7px 0 0;
+}
+.inner{
+    padding: 7%;
+}
+.inner a{
+    font-size: 1.5em;
+    color: #130400;
+    font-weight: 700;
+}
+.inner h4{
+    font-size: 1.2em;
+    color: #130400;
+    margin-top: 2%;
+}
+.inner p{
+    color: #130400;
+    margin-top: 6%;
+    line-height: 1.5em;
+}
+
+/*--------- TEATCHER CARDS -----------*/
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    float: left;
+    padding: 100px 0 50px;
+}
+.title-tc{
+    width: 100%;
+    justify-content: center center;
+    align-items: center;
+    flex-wrap: wrap;
+    float: top right;
+    font-size: 2.5em;
+    color: rgb(27, 27, 27);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0 50px;
+}
+
+.wrapper .card-tc{
+    position: relative;
+    margin: 12px;
+    box-shadow: black;
+    border-radius: 15px;
+}
+.box-tc{
+    width: 450px;
+    height: 450px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff1a;
+    padding: 1.5em;
+    border-radius: 25px;
+    border: 4px transparent #0000002a;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.829);
+}
+.profile-img{
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.profile-img img{
+    width: 100%;
+}
+.box-tc h2{
+    color: #000;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.box-tc p{
+    color: #000000c0;
+    font-size: 1.0em;
+    justify-content: center;
+}
+
+/*---- TEATCHER CARS - RESPONSIVE -------*/
+@media (max-width: 320px){
+    .wrapper{max-width: 30px;
+    flex-direction: column;}
+    .box-tc{margin-bottom: 30px; width: 300px; height: 300px}
+    .box-tc h2{font-size: 15px;}
+    .box-tc p{font-size: 10px;}
+    .box-tc i{font-size: 15px;}
+}
+@media (max-width: 576px){
+    .wrapper{max-width: 540px;
+    flex-direction: column;}   
+}
+@media (max-width: 768px){
+    .wrapper{max-width: 720px;
+    flex-direction: column;}
+    .box-tc{margin-bottom: 30px; width: 400px; height: 400px}}
+@media (max-width: 992px){
+    .wrapper{max-width: 960px;}}
+@media (max-width: 1200px){
+    .wrapper{max-width: 1152px;}}
+
+
+/*------------ PLANOS CARDS ------------------*/
+.container{
+    /* MODIFICAR DEPOIS*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    float: left;
+    padding: 100px 0 50px;
+}
+.container .card{
+    position: relative;
+    width: 370px;
+
+    min-width: 320px;
+    height: 550px;
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.03),
+    inset -10px -10px 15px rgba(255,255,255,0.5),
+    inset 10px 10px 10px rgba(0,0,0,0.03),
+    inset -10px -10px -15px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 12px;
+}
+.container .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 0px solid #1e1f23;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+.container .card:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+.container .card .box .content{
+padding: 20px;
+text-align: center;
+}
+.container .card .box .icon{
+position: relative;
+width: 80px;
+height: 80px;
+background: #f00;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+.container .card .box .icon .fa{
+    color: #fff;
+    font-size: 2em;
+}
+.container .card .box .content h3{
+    font-size: 1.8em;
+    color: #32a3b1;
+    font-weight: 300;
+}
+.container .card .box .content h4{
+    color: #32a3b1;
+    font-size: 3em;
+    font-weight: 700;
+}
+.container .card .box .content h4 sup{
+    font-size: 0.75em;
+    font-weight: 300;
+}
+.container .card .box .content ul{
+    position: relative;
+}
+.container .card .box .content ul li{
+  list-style: none;
+  color: #32a3b1; 
+  margin: 5px 0;
+}
+.container .card .box .content ul li .fa-check{
+    color: #0f0
+}
+.container .card .box .content ul li .fa-times{
+    color:#f00;
+}
+.container .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #f00;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;;
+    font-weight: 400;
+}
+.container .card:nth-child(1) .box .content a,
+.container .card:nth-child(1) .box .content .icon
+{
+    background: #2196f3;
+    box-shadow: 0 10px 20px rgba(92, 86, 86, 0.2);
+}
+.container .card:nth-child(2) .box .content a,
+.container .card:nth-child(2) .box .content .icon
+{
+    background: #e91e63;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.container .card:nth-child(3) .box .content a,
+.container .card:nth-child(3) .box .content .icon
+{
+    background: #97dc47;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+/*------------NEWSLETTER------------------*/
+.newsletter{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+    background-color: #130400;
+}
+.newsletter h2{
+font-size: 1.5em;
+color: #fff;
+font-weight: 700;
+}
+.newsletter h3{
+    color: #fff;
+    }
+.newsletter form{
+    margin-top: 2%;
+    }
+.newsletter input{
+    width: 100%;
+    background-color: #130400;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 5%;
+    border-radius: 5px;
+}
+.newsletter button{
+    width: 100%;
+    background-color: #fff;
+    color: 130400;
+    padding: 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+/*------------FOOTER------------------*/
+.footer{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+    background: #154f56;
+    color: rgba(255,255,255,0.7);
+
+}
+.social-icons a{
+    font-size: 1.5em;
+    color: rgba(255,255,255,0.7);
+    margin-right: 3%;
+}
+.social-icons a:last-child{
+margin-right: 0;
+}
+
+.social-icons a:hover{
+    color: #009ee3;
+    }
+.copyright {
+    margin-top: 2%;
+    color: rgb(255,255,255);
+}
+
+/*----- MEDIA TYPES
+Screen: Monitores/dispositivos c/ telas coloridas e resolução adequada.
+Print: Impressoras - versão impressão do site.
+------*/
+@media print{
+    .title h2{
+        font-size: 2.5em;
+        color: red;
+        font-weight: 700;
+    }
+    .title h3{
+        font-size: 1.5em;
+        color: blue;
+    }
+}
+
+/*===== MEDIA QUERY BREAKPOINTS =====*/
+/*----- MOBILE FIRST -----*/
+
+/* SMALL DEVICES - SMARTPHONES */
+   
+@media screen and (min-width: 480px){
+ 
+.logo{
+    width: 214px;
+    background:url(../images/logo1.png) center center/214px no-repeat;
+;}
+}
+/* SMALL DEVICES - TABLETS */
+
+@media screen and (min-width: 768px){
+ 
+    .servicos{
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+    }
+    .servicos:nth-child(2){
+        margin-right:0;
+    }
+    .newsletter h2{font-size: 2em;}
+    .newsletter h3{font-size: 1.5em;}
+    .newsletter input{width: 70%;padding: 2%;float: left;margin-right: 1%;}
+    .newsletter button{width: 29%;padding: 2%;float: right;  margin-top: 0%;}
+    /* TESTEMUNO CARD */
+    .swiper-container{width: 49%;}
+
+}
+/* MEDIUM DEVICES - TABLETS & DESKTOPS */
+
+@media screen and (min-width: 960px){
+.title{width: 70%; float:left; text-align: left;}
+.title h2{font-size: 3em;}
+.title h3{font-size: 2em;}
+.buttons{width: 30%; float:right;margin-top: 0;}
+.servicos{width: 32%;}
+.servicos:nth-child(2){margin-right: 2%;}
+.servicos:nth-child(3){margin-right: 0%;}
+.newsletter input{width:60%; float: none;}
+.newsletter input{width:20%; float: none;}
+/* TESTEMUNO CARD */
+.swiper-container{width: 32%;}
+
+}
+/* LARGE DEVICES - WIDE SCREENS */
+
+@media screen and (min-width: 1280px){
+.btn-menu {display: none;}    
+.btn-close {display: none;}
+.menu{width: auto; height: 56px; line-height: 56px; float: right; background-color: #f5f5f5; display: block !important; position: static;}
+.menu li{padding: 0; float: left;}
+.menu li a{color: #201f1f; font-size: 1em; padding: 15px;}
+.menu li a:hover{border: none; color:#02a2f8;}
+.icon-method{transform: translateX(5.5em) translateY(1rem);}
+}
+
+
